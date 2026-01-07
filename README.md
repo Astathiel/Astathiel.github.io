@@ -30,23 +30,6 @@ The portfolio highlights the following key projects:
 
 ---
 
-## 🚀 How to Run Locally
-If you want to view the code structure or modify the chart data locally:
-
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/Astathiel/Astathiel.github.io.git](https://github.com/Astathiel/Astathiel.github.io.git)
-    ```
-2.  **Navigate to the folder**
-    ```bash
-    cd Astathiel.github.io
-    ```
-3.  **Open the site**
-    * Simply double-click `index.html` to open it in your browser.
-    * *Note: No `npm install` or build steps are required as this is a static site.*
-
----
-
 ## 📬 Contact
 * **Location:** Tampere, Finland 🇫🇮
 * **Email:** leohaanpaa99@gmail.com
