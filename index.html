@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Haanpää - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/profile.jpg" alt="Leo Haanpää" class="profile-pic" onerror="this.style.display='none'"> 
+            <h1>Leo Haanpää</h1>
+            <p class="subtitle">Software Developer | Data Analyst</p>
+            <p class="tagline">Building software and finding insights in data.</p>
+            
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Tampere, Finland</span>
+                <span><i class="fas fa-envelope"></i> leohaanpaa99@gmail.com</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/leo-haanpaa/" target="_blank">LinkedIn</a></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring software developer currently at the start of my career, possessing a strong drive to learn and develop my professional skills. 
+                I have gained practical experience working on personal projects using Python and JavaScript, and I derive satisfaction from solving complex technical problems.
+                In addition to core competencies in Python, JavaScript, HTML/CSS, C#, and Git, I offer a solid background in customer service, fostering my ability to work effectively in fast-paced environments.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Proficiency</h2>
+            <div class="chart-container" style="position: relative; height:300px; width:100%; max-width: 800px; margin: auto;">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Symptom Search App</h3>
+                    <p>Analyzes 3 given symptoms and returns possible illnesses related to these symptoms.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">Python</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Search-Symptoms" class="btn" target="_blank">View Code</a>
+                        <a href="#" class="btn secondary" onclick="alert('Dashboard not yet linked')">View Dashboard</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Competitor Web Scraper</h3>
+                    <p>Automated script to scrape pricing data from competitor websites using BeautifulSoup.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">Python</span>
+                        <span class="tag-small">BeautifulSoup</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Web_Scraper.git" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Library Website (Tredu Project)</h3>
+                    <p>Contributed to a school project creating a website utilizing a MySQL database connected to a PHP frontend. NOTE: This project won't show because sql database was set to schools but i haven't setup new one yet.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">PHP</span>
+                        <span class="tag-small">MySQL</span>
+                        <span class="tag-small">HTML/CSS</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Tredu-Kirjasto" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Keystone Day Planner</h3>
+                    <p>Personal day to day planner with multiple features.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">HTML</span>
+                        <span class="tag-small">CSS</span>
+                        <span class="tag-small">JavaScript</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Keystone.git" class="btn" target="_blank">View Code</a>
+                        <a href="https://keystone-steel.vercel.app/" class="btn secondary" target="_blank">View Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Pokemon TCG Pocket Drop Chance Calculator</h3>
+                    <p>Calculates the probability of pulling specific cards from Pokemon TCG booster packs.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">Python</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Pokemon_TCG_Percentage_Calculator.git" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>League of Legends Pro play match win condition analyzer</h3>
+                    <p>Analyzes professional League of Legends matches to identify key win conditions using data analysis techniques.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">Python</span>
+                        <span class="tag-small">Pandas</span>
+                        <span class="tag-small">NumPy</span>
+                        <span class="tag-small">Matplotlib</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Customer Churn Analysis Engine</h3>
+                    <p>Analyzes customer data to predict churn using machine learning algorithms.</p>
+                    <div class="tech-stack">
+                        <span class="tag-small">Python</span>
+                        <span class="tag-small">Pandas</span>
+                        <span class="tag-small">Scikit-learn</span>
+                        <span class="tag-small">Matplotlib</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Astathiel/Customer_Segmentation_Engine.git" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <div class="split-section">
+            <div class="split-section" style="margin-top: 40px;">
+            
+                <section id="certifications">
+                    <h2>Certifications</h2>
+                    
+                    <div class="timeline-item">
+                        <h3>Elements of Cloud & Cybersecurity</h3>
+                        <p class="date">2025</p>
+                        <p>Course completion in XAMK.</p>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <h3>Python Programming</h3>
+                        <p class="date">2024 - 2025</p>
+                        <p>Multiple course completions across various platforms.</p>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <h3>Hygiene Passport</h3>
+                        <p class="date">2019</p>
+                        <p>Mandatory certificate of food hygiene proficiency.</p>
+                    </div>
+                </section>
+    
+                <section id="volunteering">
+                    <h2>Volunteering</h2>
+                    
+                    <div class="timeline-item">
+                        <h3>Team Member (Factory Team)</h3>
+                        <p class="date">Slush 2019</p>
+                        <p>Served hundreds of attendees in the exclusive Factory area for investors and stakeholders.</p>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <h3>Team Member (Pre-Badge Claim)</h3>
+                        <p class="date">Slush 2022</p>
+                        <p>Assisted attendees with badge pickup and registration issues, ensuring a smooth event experience.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Leo Haanpää. Built with HTML, CSS, & JS.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
