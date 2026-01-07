@@ -6,12 +6,12 @@
 
 This repository hosts my personal portfolio website, showcasing my work as a **Programmer** and **Data Analyst**. It serves as a central hub for my technical projects, certifications, and professional history.
 
-🔗 **Live Website:** [https://LeoHaanpaa.github.io/](https://LeoHaanpaa.github.io/)
+🔗 **Live Website:** [https://astathiel.github.io/](https://astathiel.github.io/)
 
 ---
 
 ## 🛠️ Tech Stack used in this Project
-This portfolio was built from scratch without using website builders (like Wix or WordPress) to demonstrate core frontend competencies.
+This portfolio was built from scratch without using website builders to demonstrate core frontend competencies.
 * **Structure:** HTML5 (Semantic)
 * **Styling:** CSS3 (Grid Layout, Responsive Design)
 * **Logic:** JavaScript (DOM Manipulation, Chart.js for data visualization)
@@ -35,11 +35,11 @@ If you want to view the code structure or modify the chart data locally:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/LeoHaanpaa/LeoHaanpaa.github.io.git](https://github.com/LeoHaanpaa/LeoHaanpaa.github.io.git)
+    git clone [https://github.com/Astathiel/Astathiel.github.io.git](https://github.com/Astathiel/Astathiel.github.io.git)
     ```
 2.  **Navigate to the folder**
     ```bash
-    cd LeoHaanpaa.github.io
+    cd Astathiel.github.io
     ```
 3.  **Open the site**
     * Simply double-click `index.html` to open it in your browser.
