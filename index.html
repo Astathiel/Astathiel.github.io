@@ -6,21 +6,44 @@
     <title>Leo Haanpää - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <img src="images/profile.jpg" alt="Leo Haanpää" class="profile-pic" onerror="this.style.display='none'"> 
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">Leo Haanpää</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Experience</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="images/profile.jpg" alt="Leo Haanpää" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Leo+Haanpaa&size=200&background=0D8ABC&color=fff'">
+            </div>
             <h1>Leo Haanpää</h1>
-            <p class="subtitle">Software Developer | Data Analyst</p>
-            <p class="tagline">Building software and finding insights in data.</p>
+            <h2 class="subtitle">Software Developer & Data Analyst</h2>
+            <p class="bio">
+                Building software and finding insights in data. I possess a strong drive to learn and develop my professional skills, solving complex technical problems with Python, JavaScript, and more.
+            </p>
             
-            <div class="contact-info">
-                <span><i class="fas fa-map-marker-alt"></i> Tampere, Finland</span>
-                <span><i class="fas fa-envelope"></i> leohaanpaa99@gmail.com</span>
-                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/leo-haanpaa/" target="_blank">LinkedIn</a></span>
+            <div class="hero-actions">
+                <a href="mailto:leohaanpaa99@gmail.com" class="btn primary">Get In Touch</a>
+                <a href="#" class="btn secondary">Download Resume</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/leo-haanpaa/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Astathiel" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:leohaanpaa99@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </header>
@@ -38,8 +61,31 @@
 
         <section id="skills">
             <h2>Technical Proficiency</h2>
-            <div class="chart-container" style="position: relative; height:300px; width:100%; max-width: 800px; margin: auto;">
-                <canvas id="skillsChart"></canvas>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line skill-icon"></i>
+                    <h3>Data Analytics</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-microsoft skill-icon"></i>
+                    <h3>C#</h3>
+                </div>
             </div>
         </section>
 

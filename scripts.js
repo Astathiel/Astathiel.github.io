@@ -27,54 +27,35 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-    // Skills Chart using Chart.js
-    const ctx = document.getElementById('skillsChart').getContext('2d');
-    
-    const skillsChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
 
-            labels: ['Python', 'JavaScript', 'Git', 'SQL', 'Data Analytics', 'C#'],
-            datasets: [{
-                label: 'Proficiency Level (1-5)',
-                data: [4, 4, 4, 2, 2, 1], 
-                backgroundColor: [
-                    'rgba(0, 123, 255, 0.7)',
-                    'rgba(0, 123, 255, 0.7)',
-                    'rgba(0, 123, 255, 0.7)',
-                    'rgba(108, 117, 125, 0.7)',
-                    'rgba(108, 117, 125, 0.7)',
-                    'rgba(108, 117, 125, 0.7)'
-                ],
-                borderColor: [
-                    'rgba(0, 123, 255, 1)',
-                    'rgba(0, 123, 255, 1)',
-                    'rgba(0, 123, 255, 1)',
-                    'rgba(108, 117, 125, 1)',
-                    'rgba(108, 117, 125, 1)',
-                    'rgba(108, 117, 125, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            indexAxis: 'y',
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    max: 5,
-                    ticks: {
-                        stepSize: 1
-                    }
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn.querySelector('i');
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+
+        // Toggle Icon
+        if (newTheme === 'dark') {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
         }
     });
 });
