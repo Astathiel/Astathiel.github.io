@@ -26,7 +26,7 @@ The portfolio highlights the following key technical projects:
 | Project | Tech Stack | Description |
 | :--- | :--- | :--- |
 | **Subscription Tracker** | React, Supabase, Stripe | Full-stack serverless application for tracking monthly expenses with authentication and payment integration. |
-| **Nova AI** | [Insert Tech Stack] | [Insert brief description of what Nova AI does] |
+| **Isra AI** | Python | Chatbot AI |
 | **Symptom Search App** | Python | Analyzes user symptoms to suggest potential medical conditions. |
 | **Competitor Scraper** | Python, BeautifulSoup | Automated script for extracting and analyzing competitor pricing data. |
 | **Library Management** | PHP, MySQL | Database-driven library system built for the Tredu educational institution. |
